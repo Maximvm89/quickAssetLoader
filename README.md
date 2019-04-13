@@ -11,7 +11,7 @@ a tool for Maya for quick loading and reference assets based on a pipeline with 
 * Fast autocompletion while typing the asset name
 * Connection with Shotgun to download the database of existings assets
 * Quick buttons to load most frequently used assets
-* Easy to use UI designed to avoid the unoptmized maya file managment system
+* Easy to use UI designed to avoid the unoptimized maya file managment system
 * Supports Windows, Linux and OSX
 * Supports Maya 2017 and 2018
 

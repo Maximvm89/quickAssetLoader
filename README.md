@@ -27,7 +27,7 @@ a tool for Maya for quick loading and reference assets based on a pipeline with 
 ## License
 
 The quickAssetLoader is free to use in production under the GNU Lesser General Public License v3.0.
-For more information please click [here](LICENSE.md).
+For more information please click [here](LICENSE).
 
 
 ## Support

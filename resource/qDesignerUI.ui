@@ -300,7 +300,7 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0,0,0,0,0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0,0,0,0">
      <property name="spacing">
       <number>6</number>
      </property>
@@ -308,9 +308,22 @@
       <number>0</number>
      </property>
      <item>
-      <widget class="QPushButton" name="tomButton">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="char1Button">
        <property name="text">
-        <string>TOM</string>
+        <string>CHAR1</string>
        </property>
        <property name="iconSize">
         <size>
@@ -321,9 +334,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="angelaButton">
+      <widget class="QPushButton" name="char2Button">
        <property name="text">
-        <string>ANGELA</string>
+        <string>CHAR2</string>
        </property>
        <property name="iconSize">
         <size>
@@ -334,9 +347,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="royButton">
+      <widget class="QPushButton" name="char3Button">
        <property name="text">
-        <string>ROY</string>
+        <string>CHAR3</string>
        </property>
        <property name="iconSize">
         <size>
@@ -347,9 +360,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="beccaButton">
+      <widget class="QPushButton" name="char4Button">
        <property name="text">
-        <string>BECCA</string>
+        <string>CHAR4</string>
        </property>
        <property name="iconSize">
         <size>
@@ -360,43 +373,17 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="gingerButton">
-       <property name="text">
-        <string>GINGER</string>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
-       <property name="iconSize">
+       <property name="sizeHint" stdset="0">
         <size>
-         <width>16</width>
+         <width>40</width>
          <height>20</height>
         </size>
        </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="benButton">
-       <property name="text">
-        <string>BEN</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>16</width>
-         <height>20</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="hankButton">
-       <property name="text">
-        <string>HANK</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>16</width>
-         <height>20</height>
-        </size>
-       </property>
-      </widget>
+      </spacer>
      </item>
     </layout>
    </item>

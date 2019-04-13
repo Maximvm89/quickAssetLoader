@@ -115,33 +115,24 @@ class QuickAssetLoaderUI(QtWidgets.QDialog):
         self.ui.referenceButton.clicked.connect(self.referenceButton)
         self.ui.importButton.clicked.connect(self.importButton)
         self.ui.tableWidget.itemDoubleClicked.connect(self.cellDoubleClicked)
-        self.ui.tomButton.clicked.connect(self.tomButtonClicked)
-        self.ui.angelaButton.clicked.connect(self.angelaButtonClicked)
-        self.ui.royButton.clicked.connect(self.royButtonClicked)
-        self.ui.beccaButton.clicked.connect(self.beccaButtonClicked)
-        self.ui.gingerButton.clicked.connect(self.gingerButtonClicked)
-        self.ui.benButton.clicked.connect(self.benButtonClicked)
-        self.ui.hankButton.clicked.connect(self.hankButtonClicked)
+        self.ui.char1Button.clicked.connect(self.char1ButtonClicked)
+        self.ui.char2Button.clicked.connect(self.char2ButtonClicked)
+        self.ui.char3Button.clicked.connect(self.char3ButtonClicked)
+        self.ui.char4Button.clicked.connect(self.char4ButtonClicked)
         self.ui.updateDBButton.clicked.connect(self.updateDb)
         
     def updateDb(self):
         self.assetsSH.updateAssetDB()
 
 
-    def tomButtonClicked(self):
-        self.assetToPath.tomButton()
-    def angelaButtonClicked(self):
-        self.assetToPath.angelaButton()
-    def royButtonClicked(self):
-        self.assetToPath.royButton()
-    def beccaButtonClicked(self):
-        self.assetToPath.beccaButton()
-    def gingerButtonClicked(self):
-        self.assetToPath.gingerButton()
-    def benButtonClicked(self):
-        self.assetToPath.benButton()
-    def hankButtonClicked(self):
-        self.assetToPath.hankButton()
+    def char1ButtonClicked(self):
+        self.assetToPath.char1Button()
+    def char2ButtonClicked(self):
+        self.assetToPath.char2Button()
+    def char3ButtonClicked(self):
+        self.assetToPath.char3Button()
+    def char4ButtonClicked(self):
+        self.assetToPath.char4Button()
                                       
         
     def cellDoubleClicked(self,item):

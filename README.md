@@ -30,4 +30,4 @@ For more information please click [here](LICENSE.md).
 
 Comments, suggestions and bug reports are welcome.
 
-Feel free to submit any issues with the error message and a detailed step by step process of how you got the error in [github issues](https://github.com/Maximvm89/issues/new) or contact [marco.parisi89@gmail.com](marco.parisi89@gmail.com).
+Feel free to submit any issues with the error message and a detailed step by step process of how you got the error in [github issues](https://github.com/Maximvm89/quickAssetLoader/issues)

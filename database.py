@@ -14,47 +14,24 @@ typing in the qLineEdit Field
 '''
 
 
-# SG Imports
-import shotgun_api3
-#Helper method to find assets
-import sg_utils.sg_query as sgq
-
-class ShotgunDB(object):
-    
-    
-    assetsDb = []    
+class AssetDB(object):
+    assetsDb = []
     filename = None
-    
+
     def __init__(self, filename):
 
-        
-        #sg = shotgun_api3.Shotgun() #In here all the data to connect to your studio shotgun in order to access data
         self.filename = filename
-        
-        
 
-    def updateAssetDB(self):
-        
-        # Main procedure
-        allAssetsInfo = sgq.get_all_assets_info()
- 
-        
-        
-        for assetsInfo in allAssetsInfo:
-            nameShotgun = assetsInfo['code']
-            self.assetsDb.append(nameShotgun)
-            
-        self.assetsDb = list(dict.fromkeys(self.assetsDb))
-        self.assetsDb.sort()
-        f=open(self.filename,"w+")
-        for i in range(len(self.assetsDb)):
-            f.write(self.assetsDb[i]+"\n" )
-   
-        f.close()
-            
-            
+    def update_asset_db(self):
+        """
+        This is the method that should connect to the Company DB and create a txt file with all the asset list to
+        use the autocompletion feature
+        :return:
+        :rtype:
+        """
+        pass
+
 if __name__ == "__main__":
-
-    #Used for testing purpose only
-    aLoader = ShotgunDB("H:/db_assets.txt")
-    aLoader.updateAssetDB()
+    # Used for testing purpose only
+    aLoader = AssetDB("H:/db_assets.txt")
+    aLoader.update_asset_db()

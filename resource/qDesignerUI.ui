@@ -260,14 +260,14 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="referenceButton">
+      <widget class="QPushButton" name="reference_button">
        <property name="text">
         <string>Reference</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="importButton">
+      <widget class="QPushButton" name="import_button">
        <property name="text">
         <string>Import</string>
        </property>
@@ -394,7 +394,6 @@
   <zorder>line_3</zorder>
   <zorder>label_3</zorder>
   <zorder>line_4</zorder>
-  <zorder>horizontalLayoutWidget</zorder>
   <zorder>line_5</zorder>
   <zorder>label_4</zorder>
   <zorder>tableWidget</zorder>
@@ -403,8 +402,8 @@
  </widget>
  <tabstops>
   <tabstop>inputText</tabstop>
-  <tabstop>referenceButton</tabstop>
-  <tabstop>importButton</tabstop>
+  <tabstop>reference_button</tabstop>
+  <tabstop>import_button</tabstop>
  </tabstops>
  <resources/>
  <connections/>

@@ -3,23 +3,24 @@
 
 <img src="./resource/quickAssetLoader.png" />
 
-a tool for Maya for quick loading and reference assets based on a pipeline with Shotgun
+This project is an exercise to explore the auto-completion feature in QT as you are type.
+It is designed to work runtime in Maya for quick loading and reference assets based on a text file that can be potentially
+be populated by any DB
 
 
 ## Features 
 
 * Fast autocompletion while typing the asset name
-* Connection with Shotgun to download the database of existings assets
+* placeholder methods to connect to any asset DB
 * Quick buttons to load most frequently used assets
-* Easy to use UI designed to avoid the unoptimized maya file managment system
-* Supports Windows, Linux and OSX
-* Supports Maya 2017 and 2018
+* Easy to use UI designed to avoid the unoptimized maya (or Shotgun) file management system
+* Supports Maya 2017,2018, 2019
 
 ## Installation
 
-1. Download and unzip this repository in your C:\Users\[USERNAME]\Documents\maya\scripts
+1. Download and unzip this repository in your C:\Users\[USERNAME]\Documents\maya\scripts\quickAssetLoader
 
-2. Create a shelf button from the main.py
+2. Turn in a shelf button from main.py script contained in this repo.
 
 3. Click the icon on the shelf to run.
 

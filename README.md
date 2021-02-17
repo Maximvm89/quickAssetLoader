@@ -3,7 +3,7 @@
 
 <img src="./resource/quickAssetLoader.png" />
 
-This project is an exercise to explore the auto-completion feature in QT as you are type.
+This project is an exercise to explore the auto-completion feature in QT as you type.
 It is designed to work runtime in Maya for quick loading and reference assets based on a text file that can be potentially
 be populated by any DB
 

@@ -25,7 +25,7 @@ import os
 
 #IMPORT CUSTOM MODULES
 import database as shAssets
-import assetToPath as aPath
+import AssetEntity as aPath
 
 
 reload(shAssets)
@@ -81,7 +81,7 @@ class QuickAssetLoaderUI(QtWidgets.QDialog):
         for i in range(len(assets)):
             assets[i] = assets[i].rstrip('\n')
             
-        self.assetToPath = aPath.assetToPath()
+        self.assetToPath = aPath.AssetEntity()
         self.completer = QCompleter()
         model = QtGui.QStringListModel()
         self.completer.setModel(model)
@@ -138,7 +138,7 @@ class QuickAssetLoaderUI(QtWidgets.QDialog):
     def cellDoubleClicked(self,item):
         
         if 'ma' in item.text():
-            path="{}\{}".format(self.assetToPath.getAssetPath(), item.text())
+            path="{}\{}".format( self.assetToPath.get_asset_path(), item.text() )
             self.assetToPath.reference(path) 
         else:
             print 'You selected a date, please select the asset Name'
@@ -195,7 +195,7 @@ class QuickAssetLoaderUI(QtWidgets.QDialog):
             path, fileName = os.path.split(fullPath[0])
             self.ui.labelAsset.setText(str(fileName))
             if self.assetToPath.setTheAsset(text) is not None:
-                files =  self.assetToPath.getFilesInAssetDir()
+                files =  self.assetToPath.get_files_in_asset_dir()
         
 
             self.ui.tableWidget.setRowCount(len(files))

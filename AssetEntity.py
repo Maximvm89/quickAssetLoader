@@ -9,6 +9,8 @@ DESCRIPTION
 ---------------
 The point of this class is to gather the asset name from quickAssetLoaderUI
 and get the file path to where this asset lives on disk.
+The Asset Entity init method will not have the asset name as the class will be a container used to be populate dynamically
+in a loop using the build_asset() method
 This class will be pretty much with placeholder methods to be implemented based on the company's pipeline
 
 '''
@@ -17,14 +19,24 @@ import os
 
 class AssetEntity:
 
-    def __init__(self, asset_name, namespace=None):
+    def __init__(self):
         """
         Init method
         :param str asset_name: the string version of the asset name
         """
 
+        self.asset_name = None
+        self.asset_path = None
+        self.namespace = None
+
+    def build_asset(self,  asset_name, namespace=None):
+        """
+
+        :param str asset_name: the name of the asset to import
+        :param str namespace: optional value, if we want to have a namespace during import
+        :return:
+        """
         self.asset_name = asset_name
-        self.asset_path = self.get_asset_path()
         self.namespace = namespace
 
     @staticmethod
